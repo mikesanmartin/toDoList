@@ -36,8 +36,10 @@ $(document).ready(function(){
         var listElements = $("li");
         var completeElements = $(".complete");
 
-        if (listElements.hasClass("complete")){
+        if(listElements.hasClass("complete")){
             completeElements.remove();
+        }else{
+            alert("There are no complete tasks!")
         }
     })
 })

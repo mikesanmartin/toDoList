@@ -37,7 +37,6 @@ $(document).ready(function(){
         var completeElements = $(".complete");
 
         if (listElements.hasClass("complete")){
-            console.log('hay un elemento que tiene la clase complete');
             completeElements.remove();
         }
     })

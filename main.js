@@ -27,7 +27,18 @@ $(document).ready(function(){
             liElement.addClass('inprogress');
         }else{
             liElement.addClass('complete');
-        }
+        }    
+    })
+    
+    // Remove Complete
+    clearButton.click(function(){
         
+        var listElements = $("li");
+        var completeElements = $(".complete");
+
+        if (listElements.hasClass("complete")){
+            console.log('hay un elemento que tiene la clase complete');
+            completeElements.remove();
+        }
     })
 })
